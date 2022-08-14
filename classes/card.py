@@ -6,5 +6,9 @@ class Card:
         self.point_val = point_val
         self.string_val = string_val
 
+    def __repr__(self):
+        return f'{self.string_val} of {self.suit}'
+
     def card_info(self):
         print(f"{self.string_val} of {self.suit} : {self.point_val} points")
+        return self
