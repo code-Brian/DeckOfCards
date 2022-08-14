@@ -1,14 +1,12 @@
 from classes.deck import Deck
-from classes.deck import Randomized_Deck
-
-current_deck = Randomized_Deck()
 
 class Player:
 
     players = []
 
-    def __init__(self, name:str, ) -> None:
+    def __init__(self, name:str, deck:list) -> None:
         self.name = name
+        self.deck = deck
 
     def hit(self, deck):
         self.hand.append(deck.pop())
